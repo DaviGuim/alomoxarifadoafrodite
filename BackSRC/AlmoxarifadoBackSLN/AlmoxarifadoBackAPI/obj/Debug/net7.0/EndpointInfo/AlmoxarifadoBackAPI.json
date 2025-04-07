@@ -503,7 +503,7 @@
       "FornecedorCadastroDTO": {
         "type": "object",
         "properties": {
-          "descricao": {
+          "nome": {
             "type": "string",
             "nullable": true
           },

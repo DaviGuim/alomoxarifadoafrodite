@@ -1,6 +1,7 @@
 ﻿using AlmoxafiradoFront.DTO;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Text;
 using System.Text.Json;
 
 namespace AlmoxafiradoFront.Controllers
@@ -35,5 +36,35 @@ namespace AlmoxafiradoFront.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Cadastro(string descricao, string unidademedida, float estoqueatual, bool epermanente, int categoria  )
+        {
+       
+            var url = "https://localhost:44366/criarproduto";
+            using HttpClient client = new HttpClient();
+            try
+            {
+                var produtoNova = new ProdutoDTONova
+                {
+                    descricao = descricao,
+                    unidademedida = unidademedida,
+                    estoqueatual = estoqueatual,
+                    epermanente = epermanente,
+                    codigocategoria = categoria
+                };
+                var proSerializada = JsonSerializer.Serialize<ProdutoDTONova>(produtoNova);
+
+                var jsonContent = new StringContent(proSerializada, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = client.PostAsync(url, jsonContent).Result;
+                response.EnsureSuccessStatusCode();
+            }
+            catch (Exception)
+            {
+                return View();
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
+    

@@ -35,7 +35,7 @@ namespace AlmoxarifadoBackAPI.Controllers
 
             var novafor = new Fornecedor()
             {
-                Nome = fornecedor.descricao,
+                Nome = fornecedor.Nome,
                 Telefone = fornecedor.Telefone,
                 Estado = fornecedor.Estado,
                 Cidade = fornecedor.Cidade,
