@@ -1,8 +1,5 @@
-﻿namespace AlmoxafiradoFront.wwwroot.css
-{
-    public class Estoque
-{
-    body
+﻿
+ body
 
 {
     font-family: Arial, sans-serif;
@@ -49,7 +46,7 @@ form {
             background-color: #218838;
         }
 
-table {
+table{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -67,5 +64,16 @@ table {
     text-align: right;
 }
 
-    }
+.remover {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
 }
+
+    .remover:hover {
+        background-color: #c82333;
+    }
+
+

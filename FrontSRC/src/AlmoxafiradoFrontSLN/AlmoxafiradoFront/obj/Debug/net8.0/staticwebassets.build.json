@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xGOcNkRQWRwu6FSSBayT3iQwWkeQHAjE9ycKnMT266g=",
+  "Hash": "OoMQst2PLffcJz0HnItbXF6R1+wjthOEixczM9fCIrI=",
   "Source": "AlmoxafiradoFront",
   "BasePath": "_content/AlmoxafiradoFront",
   "Mode": "Default",
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6j6cpro19f",
-      "Integrity": "7o66Xk9Qyfa1rUDA/55eNCgP2W465Kz8xUgyCUFLKTk=",
+      "Fingerprint": "0zaye7q4ji",
+      "Integrity": "DFbVFVEhNN0cXDI+5qNllZFmue8/M7rzBmVMZ60tPhU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Estoque.css"
@@ -1941,7 +1941,7 @@
       ]
     },
     {
-      "Route": "css/Estoque.6j6cpro19f.css",
+      "Route": "css/Estoque.0zaye7q4ji.css",
       "AssetFile": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\FrontSRC\\src\\AlmoxafiradoFrontSLN\\AlmoxafiradoFront\\wwwroot\\css\\Estoque.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1951,7 +1951,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1179"
+          "Value": "1296"
         },
         {
           "Name": "Content-Type",
@@ -1959,11 +1959,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7o66Xk9Qyfa1rUDA/55eNCgP2W465Kz8xUgyCUFLKTk=\""
+          "Value": "\"DFbVFVEhNN0cXDI+5qNllZFmue8/M7rzBmVMZ60tPhU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Aug 2025 17:48:48 GMT"
+          "Value": "Fri, 01 Aug 2025 18:27:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1973,7 +1973,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6j6cpro19f"
+          "Value": "0zaye7q4ji"
         },
         {
           "Name": "label",
@@ -1981,7 +1981,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7o66Xk9Qyfa1rUDA/55eNCgP2W465Kz8xUgyCUFLKTk="
+          "Value": "sha256-DFbVFVEhNN0cXDI+5qNllZFmue8/M7rzBmVMZ60tPhU="
         }
       ]
     },
@@ -1996,7 +1996,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1179"
+          "Value": "1296"
         },
         {
           "Name": "Content-Type",
@@ -2004,11 +2004,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7o66Xk9Qyfa1rUDA/55eNCgP2W465Kz8xUgyCUFLKTk=\""
+          "Value": "\"DFbVFVEhNN0cXDI+5qNllZFmue8/M7rzBmVMZ60tPhU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Aug 2025 17:48:48 GMT"
+          "Value": "Fri, 01 Aug 2025 18:27:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2018,7 +2018,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7o66Xk9Qyfa1rUDA/55eNCgP2W465Kz8xUgyCUFLKTk="
+          "Value": "sha256-DFbVFVEhNN0cXDI+5qNllZFmue8/M7rzBmVMZ60tPhU="
         }
       ]
     },

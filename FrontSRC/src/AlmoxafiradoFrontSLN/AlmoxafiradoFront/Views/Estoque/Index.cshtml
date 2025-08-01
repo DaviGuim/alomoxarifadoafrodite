@@ -1,8 +1,4 @@
-﻿namespace AlmoxafiradoFront.Views.Estoque
-{
-    public class Index
-    {
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Controle de Estoque</h1>
+        <h1e>Controle de Estoque</h1e>
         <form id="estoque-form">
             <input type="text" id="codigo" placeholder="Código do Produto" required>
             <input type="text" id="produto" placeholder="Nome do Produto" required>
@@ -26,6 +22,7 @@
                     <th>Código</th>
                     <th>Produto</th>
                     <th>Quantidade</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -55,7 +52,8 @@
           novaLinha.innerHTML = `
             <td>${codigo}</td>
             <td>${produto}</td>
-            <td>${quantidade}</td>
+            <td class="quantidade">${quantidade}</td>
+            <td><button class="remover">Remover</button></td>
           `;
 
           tabela.appendChild(novaLinha);
@@ -65,9 +63,17 @@
 
           form.reset();
         });
+
+        tabela.addEventListener('click', function(event) {
+          if (event.target.classList.contains('remover')) {
+            const linha = event.target.closest('tr');
+            const quantidadeRemover = parseInt(linha.querySelector('.quantidade').textContent);
+
+            linha.remove();
+            quantidadeTotal -= quantidadeRemover;
+            totalSpan.textContent = quantidadeTotal;
+          }
+        });
     </script>
 </body>
 </html>
-
-    }
-}
