@@ -48,6 +48,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AlmoxarifadoBackAPI.Controllers.EstoqueController",
+    "Method": "criarEstoque",
+    "RelativePath": "criarEstoque",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estoque",
+        "Type": "AlmoxarifadoBackAPI.DTO.EstoqueCadastroDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AlmoxarifadoBackAPI.Controllers.FornecedorController",
     "Method": "criarFornecedor",
     "RelativePath": "criarFornecedor",
@@ -128,6 +144,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AlmoxarifadoBackAPI.Controllers.EstoqueController",
+    "Method": "listaEstoque",
+    "RelativePath": "Estoque",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estoque",
+        "Type": "AlmoxarifadoBackAPI.DTO.EstoqueDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AlmoxarifadoBackAPI.Controllers.FornecedorController",
     "Method": "listaFornecedor",
     "RelativePath": "Fornecedor",
@@ -157,6 +189,16 @@
     "ContainingType": "AlmoxarifadoBackAPI.Controllers.EntradaController",
     "Method": "listaEntrada",
     "RelativePath": "listaEntrada",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlmoxarifadoBackAPI.Controllers.EstoqueController",
+    "Method": "listaestoque",
+    "RelativePath": "listaEstoque",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

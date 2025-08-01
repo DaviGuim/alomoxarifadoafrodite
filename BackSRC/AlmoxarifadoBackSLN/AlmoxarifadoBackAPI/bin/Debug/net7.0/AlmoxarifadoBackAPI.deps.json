@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "AlmoxarifadoBackAPI/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "7.0.19",
+          "Microsoft.AspNetCore.OpenApi": "7.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -50,14 +50,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/7.0.19": {
+      "Microsoft.AspNetCore.OpenApi/7.0.20": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
         },
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "7.0.19.0",
-            "fileVersion": "7.0.1924.22306"
+            "assemblyVersion": "7.0.20.0",
+            "fileVersion": "7.0.2024.26907"
           }
         }
       },
@@ -583,12 +583,12 @@
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.OpenApi/7.0.19": {
+    "Microsoft.AspNetCore.OpenApi/7.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gHLiPrMts7U1ugAA5m8R6eN40ymcbvQC0BUB3sVs/9G4eXAW/6w8e6sA++8ENBZVqWNoxA5lcXUzDRh8Apkpig==",
-      "path": "microsoft.aspnetcore.openapi/7.0.19",
-      "hashPath": "microsoft.aspnetcore.openapi.7.0.19.nupkg.sha512"
+      "sha512": "sha512-coCi7bh16o4B2qKbD7fng+4m1vu51L9MzTW+9NZp3NvLgAurDMT1kOg2uuycCN4BtEz3EYXlfJMJ2hK6EU7ISQ==",
+      "path": "microsoft.aspnetcore.openapi/7.0.20",
+      "hashPath": "microsoft.aspnetcore.openapi.7.0.20.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
