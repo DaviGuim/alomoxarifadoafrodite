@@ -1,0 +1,71 @@
+﻿namespace AlmoxafiradoFront.wwwroot.css
+{
+    public class Estoque
+{
+    body
+
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+    form input, form button {
+        padding: 10px;
+        font-size: 16px;
+        flex: 1;
+    }
+
+    form button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+        flex: none;
+    }
+
+        form button:hover {
+            background-color: #218838;
+        }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+#quantidade-total {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+    }
+}
