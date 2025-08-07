@@ -46,7 +46,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/7.0.19": {
+      "Microsoft.AspNetCore.OpenApi/7.0.20": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -1137,10 +1137,10 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/7.0.19": {
-      "sha512": "gHLiPrMts7U1ugAA5m8R6eN40ymcbvQC0BUB3sVs/9G4eXAW/6w8e6sA++8ENBZVqWNoxA5lcXUzDRh8Apkpig==",
+    "Microsoft.AspNetCore.OpenApi/7.0.20": {
+      "sha512": "coCi7bh16o4B2qKbD7fng+4m1vu51L9MzTW+9NZp3NvLgAurDMT1kOg2uuycCN4BtEz3EYXlfJMJ2hK6EU7ISQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/7.0.19",
+      "path": "microsoft.aspnetcore.openapi/7.0.20",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1148,7 +1148,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net7.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.7.0.19.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.7.0.20.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -3152,29 +3152,29 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.OpenApi >= 7.0.19",
+      "Microsoft.AspNetCore.OpenApi >= 7.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.20",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Manha.Cetafest\\.nuget\\packages\\": {},
+    "C:\\Users\\Tarde.Cetafest\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manha.Cetafest\\Documents\\GitHub\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\AlmoxarifadoBackAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\AlmoxarifadoBackAPI.csproj",
       "projectName": "AlmoxarifadoBackAPI",
-      "projectPath": "C:\\Users\\Manha.Cetafest\\Documents\\GitHub\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\AlmoxarifadoBackAPI.csproj",
-      "packagesPath": "C:\\Users\\Manha.Cetafest\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manha.Cetafest\\Documents\\GitHub\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\obj\\",
+      "projectPath": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\AlmoxarifadoBackAPI.csproj",
+      "packagesPath": "C:\\Users\\Tarde.Cetafest\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Manha.Cetafest\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tarde.Cetafest\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3210,7 +3210,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[7.0.19, )"
+            "version": "[7.0.20, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

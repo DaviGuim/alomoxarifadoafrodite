@@ -6,20 +6,20 @@ using System.Text.Json;
 
 namespace AlmoxafiradoFront.Controllers
 {
-    public class CategoriaController : Controller
+    public class EstoqueController : Controller
     {
         public  IActionResult Index()
         {
-            var url = "https://localhost:44366/lista";
-            List <CategoriaDTO> categorias = new List < CategoriaDTO> ();
+            var url = "https://localhost:44366/listaEstoque";
+            List <EstoqueDTO> estoques = new List < EstoqueDTO> ();
             using HttpClient client = new HttpClient();
             try
             {
                 HttpResponseMessage response =  client.GetAsync(url).Result ;
                 response.EnsureSuccessStatusCode();
                 string json =  response.Content.ReadAsStringAsync().Result;
-                 categorias = JsonSerializer.Deserialize<List<CategoriaDTO>>(json); 
-                 ViewBag.Categorias = categorias;
+                 estoques = JsonSerializer.Deserialize<List<EstoqueDTO>>(json); 
+                 ViewBag.Estoques = estoques;
 
 
             }
@@ -37,16 +37,16 @@ namespace AlmoxafiradoFront.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Cadastrar(string descricao)
+        public IActionResult Cadastrar(string produto, int quantidade)
         {
-            var url = "https://localhost:44366/criarcategoria";
+            var url = "https://localhost:44366/criarEstoque";
             using HttpClient client = new HttpClient();
             try
             {
-                var Categorianova = new CategoriaDTONova { descricao = descricao };
-                var categoriaSerializada= JsonSerializer.Serialize<CategoriaDTONova>(Categorianova);
+                var Estoquenova = new EstoqueDTONova { produto = produto };
+                var estoqueSerializada= JsonSerializer.Serialize<EstoqueDTONova>(Estoquenova);
 
-                var jsonContent = new StringContent(categoriaSerializada, Encoding.UTF8, "application/json");
+                var jsonContent = new StringContent(estoqueSerializada, Encoding.UTF8, "application/json");
 
                 HttpResponseMessage response = client.PostAsync(url, jsonContent).Result;
                 response.EnsureSuccessStatusCode();

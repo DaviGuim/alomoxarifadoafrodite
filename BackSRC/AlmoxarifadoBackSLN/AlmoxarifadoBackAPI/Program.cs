@@ -20,6 +20,7 @@ builder.Services.AddScoped<IFornecedorRepositorio, FornecedorRepositorio>();
 builder.Services.AddScoped<ISecretariaRepositorio, SecretariaRepositorio>();
 builder.Services.AddScoped<IEntradaRepositorio, EntradaRepositorio>();
 builder.Services.AddScoped<ISaidaRepositorio, SaidaRepositorio>();
+builder.Services.AddScoped<IEstoqueRepositorio, EstoqueRepositorio>();
 
 
 
