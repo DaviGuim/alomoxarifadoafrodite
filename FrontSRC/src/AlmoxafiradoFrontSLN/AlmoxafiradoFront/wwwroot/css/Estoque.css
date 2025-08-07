@@ -1,5 +1,5 @@
 ﻿
- body
+ principal
 
 {
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@
     padding: 20px;
 }
 
-.container {
+.segundo {
     max-width: 700px;
     margin: auto;
     background: white;
@@ -16,43 +16,43 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
+si {
     text-align: center;
     margin-bottom: 20px;
 }
 
-form {
+forme {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-    form input, form button {
+    form btn, form bt {
         padding: 10px;
         font-size: 16px;
         flex: 1;
     }
 
-    form button {
-        background-color: #28a745;
+    form bt {
+        background-color: lawngreen;
         color: white;
         border: none;
         cursor: pointer;
         flex: none;
     }
 
-        form button:hover {
+        form bt:hover {
             background-color: #218838;
         }
 
-table{
+tb{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-    table th, table td {
+    tb th, tb td {
         border: 1px solid #ddd;
         padding: 10px;
         text-align: left;
