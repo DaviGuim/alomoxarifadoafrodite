@@ -581,7 +581,7 @@
             "type": "string",
             "nullable": true
           },
-          "quantidade": {
+          "quantiadade": {
             "type": "integer",
             "format": "int32"
           }

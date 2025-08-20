@@ -36,7 +36,7 @@ namespace AlmoxarifadoBackAPI.Controllers
             var novaEstoque = new Estoque()
             {               
                 Produto = estoque.Produto,
-                Quantidade = estoque.Quantidade
+                Quantiadade = estoque.Quantiadade
             };
             //_categorias.Add(novaCategoria);
             _db.Add(novaEstoque);

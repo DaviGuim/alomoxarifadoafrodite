@@ -3,7 +3,7 @@
     public class EstoqueCadastroDTO
     {    
         public string Produto { get; set; }
-        public int Quantidade { get; set; }
+        public int Quantiadade { get; set; }
        
     }
 }
