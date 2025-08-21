@@ -10,4 +10,11 @@
     <Content Remove="Views\Categoria\Index1.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Estoque\Create.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
