@@ -5,6 +5,6 @@
         public int Codigo { get; set; }
         public string Produto { get; set; }
 
-        public int Quantiadade { get; set; }
+        public int Quantidade { get; set; }
     }
 }

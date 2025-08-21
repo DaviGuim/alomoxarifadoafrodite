@@ -581,7 +581,7 @@
             "type": "string",
             "nullable": true
           },
-          "quantiadade": {
+          "quantidade": {
             "type": "integer",
             "format": "int32"
           }
@@ -592,6 +592,14 @@
         "type": "object",
         "properties": {
           "codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "produto": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
             "type": "integer",
             "format": "int32"
           }

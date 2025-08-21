@@ -47,7 +47,5 @@ namespace AlmoxarifadoBackAPI.Controllers
             return Ok("Cadastro com Sucesso");
         }
 
-
-
     }
 }
