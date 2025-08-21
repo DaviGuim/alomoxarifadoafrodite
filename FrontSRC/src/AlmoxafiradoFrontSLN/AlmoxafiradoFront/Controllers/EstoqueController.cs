@@ -1,8 +1,7 @@
 ﻿using AlmoxafiradoFront.DTO;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Text;
 using System.Text.Json;
+using System.Text;
 
 namespace AlmoxafiradoFront.Controllers
 {
@@ -19,7 +18,8 @@ namespace AlmoxafiradoFront.Controllers
                 response.EnsureSuccessStatusCode();
                 string json = response.Content.ReadAsStringAsync().Result;
                 estoques = JsonSerializer.Deserialize<List<EstoqueDTO>>(json);
-                ViewBag.Estoque = estoques;
+                ViewBag.Estoques = estoques;
+                return View();
 
 
             }
@@ -35,27 +35,6 @@ namespace AlmoxafiradoFront.Controllers
         public IActionResult Create()
         {
             return View();
-        }
-        [HttpPost]
-        public IActionResult Cadastrar(string produto, int quantidade)
-        {
-            var url = "https://localhost:44366/criarEstoque";
-            using HttpClient client = new HttpClient();
-            try
-            {
-                var Estoquenova = new EstoqueDTONova { Produto = produto };
-                var estoqueSerializada = JsonSerializer.Serialize<EstoqueDTONova>(Estoquenova);
-
-                var jsonContent = new StringContent(estoqueSerializada, Encoding.UTF8, "application/json");
-
-                HttpResponseMessage response = client.PostAsync(url, jsonContent).Result;
-                response.EnsureSuccessStatusCode();
-            }
-            catch (Exception)
-            {
-                return View();
-            }
-            return RedirectToAction("Index");
         }
     }
 }

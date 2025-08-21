@@ -56,7 +56,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "estoque",
+        "Name": "Estoque",
         "Type": "AlmoxarifadoBackAPI.DTO.EstoqueCadastroDTO",
         "IsRequired": true
       }
@@ -152,7 +152,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "estoque",
+        "Name": "Estoque",
         "Type": "AlmoxarifadoBackAPI.DTO.EstoqueDTO",
         "IsRequired": true
       }
@@ -197,7 +197,7 @@
   },
   {
     "ContainingType": "AlmoxarifadoBackAPI.Controllers.EstoqueController",
-    "Method": "listaestoque",
+    "Method": "listaEstoque",
     "RelativePath": "listaEstoque",
     "HttpMethod": "GET",
     "IsController": true,

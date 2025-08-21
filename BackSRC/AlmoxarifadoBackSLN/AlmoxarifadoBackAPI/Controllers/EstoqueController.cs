@@ -18,25 +18,25 @@ namespace AlmoxarifadoBackAPI.Controllers
         }
 
         [HttpGet("/listaEstoque")]
-        public IActionResult listaestoque()
+        public IActionResult listaEstoque()
         {
             return Ok(_db.GetAll());
         }
 
         [HttpPost("/Estoque")]
-        public IActionResult listaEstoque(EstoqueDTO estoque)
+        public IActionResult listaEstoque(EstoqueDTO Estoque)
         {
-            return Ok(_db.GetAll().Where(x => x.Codigo == estoque.Codigo));
+            return Ok(_db.GetAll().Where(x => x.Codigo== Estoque.Codigo));
         }
 
         [HttpPost("/criarEstoque")]
-        public IActionResult criarEstoque(EstoqueCadastroDTO estoque)
+        public IActionResult criarEstoque(EstoqueCadastroDTO Estoque)
         {
 
             var novaEstoque = new Estoque()
             {               
-                Produto = estoque.Produto,
-                Quantidade = estoque.Quantidade
+                Produto = Estoque.Produto,
+                Quantidade = Estoque.Quantidade
             };
             //_categorias.Add(novaCategoria);
             _db.Add(novaEstoque);

@@ -106,20 +106,20 @@
             </thead>
             <tbody>
 
-                @foreach (var item in ViewBag.Estoque)
+                @foreach (var item in ViewBag.Estoques)
                 {
                     <tr>
-                        <td class="tdEs">@item.Codigo</td>
-                        <td class="tdEs">@item.Produto</td>
-                        <td class="tdEs">@item.Quantidade</td>
-                        <td class="tdEs">
-                            <div class="IconesContainerEs">
-                                <div class="Icone1Es">
+                        <td class="tdEst">@item.Codigo</td>
+                        <td class="tdEst">@item.Produto</td>
+                        <td class="tdEst">@item.Quantidade</td>
+                        <td class="tdEst">
+                            <div class="IconesContainerEst">
+                                <div class="Icone1Est">
                                     <button class="trash-btn">
                                         <div class="fas fa-trash"></div>
                                     </button>
                                 </div>
-                                <div class="Icone2Es">
+                                <div class="Icone2Est">
                                     <button class="edit-button">
                                         <div class="fas fa-edit"></div>
                                     </button>
@@ -134,9 +134,9 @@
 
         </table>
     </div>
-    <div class="containerEs">
+    <div class="containerEst">
         <div>
-            <button class="btnFor BtnAzulColorEs">
+            <button class="btnFor BtnAzulColorEst">
                 Voltar
             </button>
         </div>
