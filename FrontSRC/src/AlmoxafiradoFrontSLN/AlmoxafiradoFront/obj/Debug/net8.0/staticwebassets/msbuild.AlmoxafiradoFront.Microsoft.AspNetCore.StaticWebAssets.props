@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n5l97houht</Fingerprint>
-      <Integrity>Wx7piZ9+64Q+ogb6dduYONIZpG3kWTSZez4lOAy2EEw=</Integrity>
+      <Fingerprint>1qhi5hvc7u</Fingerprint>
+      <Integrity>x9ygh5H4p3Tp9NVPUn/fhfBjMQ1NfJ+RYEfNyizYuDE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Estoque.css'))</OriginalItemSpec>

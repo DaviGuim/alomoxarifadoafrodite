@@ -2,7 +2,7 @@
 {
     public class EstoqueDTONova
     {
-        public string produto { get; set; }
-        public int quantidade { get; set; }
+        public string Produto { get; set; }
+        public int Quantidade { get; set; }
     }
 }

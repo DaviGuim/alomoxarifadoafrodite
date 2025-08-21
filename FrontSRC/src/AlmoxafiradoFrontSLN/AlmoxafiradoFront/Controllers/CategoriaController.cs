@@ -6,27 +6,27 @@ using System.Text.Json;
 
 namespace AlmoxafiradoFront.Controllers
 {
-    public class EstoqueController : Controller
+    public class CategoriaController : Controller
     {
-        public  IActionResult Index()
+        public IActionResult Index()
         {
-            var url = "https://localhost:44366/listaEstoque";
-            List <EstoqueDTO> estoques = new List < EstoqueDTO> ();
+            var url = "https://localhost:44366/lista";
+            List<CategoriaDTO> categorias = new List<CategoriaDTO>();
             using HttpClient client = new HttpClient();
             try
             {
-                HttpResponseMessage response =  client.GetAsync(url).Result ;
+                HttpResponseMessage response = client.GetAsync(url).Result;
                 response.EnsureSuccessStatusCode();
-                string json =  response.Content.ReadAsStringAsync().Result;
-                 estoques = JsonSerializer.Deserialize<List<EstoqueDTO>>(json); 
-                 ViewBag.Estoques = estoques;
+                string json = response.Content.ReadAsStringAsync().Result;
+                categorias = JsonSerializer.Deserialize<List<CategoriaDTO>>(json);
+                ViewBag.Categorias = categorias;
 
 
             }
             catch (Exception)
             {
                 return View();
-                
+
             }
 
             return View();
@@ -37,21 +37,21 @@ namespace AlmoxafiradoFront.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Cadastrar(string produto, int quantidade)
+        public IActionResult Cadastrar(string descricao)
         {
-            var url = "https://localhost:44366/criarEstoque";
+            var url = "https://localhost:44366/criarcategoria";
             using HttpClient client = new HttpClient();
             try
             {
-                var Estoquenova = new EstoqueDTONova { produto = produto };
-                var estoqueSerializada= JsonSerializer.Serialize<EstoqueDTONova>(Estoquenova);
+                var Categorianova = new CategoriaDTONova { descricao = descricao };
+                var categoriaSerializada = JsonSerializer.Serialize<CategoriaDTONova>(Categorianova);
 
-                var jsonContent = new StringContent(estoqueSerializada, Encoding.UTF8, "application/json");
+                var jsonContent = new StringContent(categoriaSerializada, Encoding.UTF8, "application/json");
 
                 HttpResponseMessage response = client.PostAsync(url, jsonContent).Result;
                 response.EnsureSuccessStatusCode();
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return View();
             }

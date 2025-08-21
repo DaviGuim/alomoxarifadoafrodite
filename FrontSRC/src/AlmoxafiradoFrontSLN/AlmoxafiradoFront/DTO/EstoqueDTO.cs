@@ -2,9 +2,9 @@
 {
     public class EstoqueDTO
     {
-        public int codigo { get; set; }
+        public int Codigo { get; set; }
 
-        public string produto { get; set; }
-        public int quantidade { get; set; }
+        public string Produto { get; set; }
+        public int Quantidade { get; set; }
     }
 }

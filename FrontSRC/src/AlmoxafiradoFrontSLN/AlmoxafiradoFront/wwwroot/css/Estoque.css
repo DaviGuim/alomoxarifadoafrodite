@@ -1,79 +1,118 @@
-﻿
- principal
-
-{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.segundo {
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-si {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-forme {
+﻿.containerEs {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-    form btn, form bt {
-        padding: 10px;
-        font-size: 16px;
-        flex: 1;
-    }
-
-    form bt {
-        background-color: lawngreen;
-        color: white;
-        border: none;
-        cursor: pointer;
-        flex: none;
-    }
-
-        form bt:hover {
-            background-color: #218838;
-        }
-
-tb{
+.container1Es {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    height: 15%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
 }
 
-    tb th, tb td {
-        border: 1px solid #ddd;
-        padding: 10px;
-        text-align: left;
-    }
-
-#quantidade-total {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: right;
+.container2Es {
+    width: 100%;
+    height: 70%;
+    /* background-color: green; */
 }
 
-.remover {
-    background-color: #dc3545;
+.container3Es {
+    width: 100%;
+    height: 15%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnEs {
+    padding: 0.3rem;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: 0;
     color: white;
-    border: none;
-    padding: 6px 10px;
-    cursor: pointer;
+    font-weight: bolder;
 }
 
-    .remover:hover {
-        background-color: #c82333;
+.BtnAzulColorEs {
+    background-color: cyan !important;
+}
+
+.theadEs {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.TableContainerEs {
+    width: 100%;
+    font-size: 15pt !important;
+}
+
+    .TableContainerEs td, th {
+        border: 1px solid black;
     }
 
+.tdEs {
+    background-color: white;
+    color: black;
+}
 
+.Icone1Es {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.trash-btn {
+    background-color: #ffff;
+    border-color: white;
+}
+
+    .trash-btn:hover {
+        background-color: #b6ff00;
+    }
+
+fas fa-edit {
+    background-color: black;
+}
+
+.Icone2Es {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.edit-button {
+    background-color: #ffff;
+    border-color: white;
+}
+
+    .edit-button:hover {
+        background-color: #b6ff00;
+        cursor: pointer;
+    }
+
+.IconesContainerEs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .containerEs {
+        width: 82%;
+    }
+}
