@@ -1,0 +1,270 @@
+﻿
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            cursor: pointer;
+            position: relative;
+        }
+
+            th:hover {
+                background-color: #2980b9;
+            }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #e8f4fc;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .top-1 {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .top-2 {
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        .top-3 {
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        .ranking {
+            font-weight: bold;
+            text-align: center;
+            width: 50px;
+        }
+
+        .low-stock {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .actions {
+            white-space: nowrap;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+            font-size: 0.85em;
+        }
+
+        .btn-edit {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn-delete {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            th, td
+
+        {
+            padding: 8px 10px;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top 10 Estoque</h1>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Categoria</th>
+                        <th>Valor Unitário</th>
+                        <th>Valor Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ranking top-1">1</td>
+                        <td>Notebook Gamer Avançado</td>
+                        <td>128</td>
+                        <td>Informática</td>
+                        <td>R$ 4.599,00</td>
+                        <td>R$ 588.672,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking top-2">2</td>
+                        <td>Smartphone Premium</td>
+                        <td>215</td>
+                        <td>Celulares</td>
+                        <td>R$ 2.199,00</td>
+                        <td>R$ 472.785,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking top-3">3</td>
+                        <td>Tablet Profissional</td>
+                        <td>187</td>
+                        <td>Informática</td>
+                        <td>R$ 1.899,00</td>
+                        <td>R$ 355.113,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking">4</td>
+                        <td>Fone de Ouvido Sem Fio</td>
+                        <td>342</td>
+                        <td>Áudio</td>
+                        <td>R$ 899,00</td>
+                        <td>R$ 307.458,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking">5</td>
+                        <td>Monitor 4K 27"</td>
+                        <td>92</td>
+                        <td>Informática</td>
+                        <td>R$ 2.299,00</td>
+                        <td>R$ 211.508,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking">6</td>
+                        <td>Smartwatch Esportivo</td>
+                        <td>176</td>
+                        <td>Wearables</td>
+                        <td>R$ 1.099,00</td>
+                        <td>R$ 193.424,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking">7</td>
+                        <td>Console de Videogame</td>
+                        <td>78</td>
+                        <td>Games</td>
+                        <td>R$ 2.499,00</td>
+                        <td>R$ 194.922,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking">8</td>
+                        <td>Teclado Mecânico</td>
+                        <td>254</td>
+                        <td>Periféricos</td>
+                        <td>R$ 699,00</td>
+                        <td>R$ 177.546,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking">9</td>
+                        <td>Mouse Gamer</td>
+                        <td>301</td>
+                        <td>Periféricos</td>
+                        <td>R$ 549,00</td>
+                        <td>R$ 165.249,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ranking">10</td>
+                        <td>Caixa de Som Bluetooth</td>
+                        <td>189</td>
+                        <td>Áudio</td>
+                        <td>R$ 799,00</td>
+                        <td>R$ 151.011,00</td>
+                        <td class="actions">
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

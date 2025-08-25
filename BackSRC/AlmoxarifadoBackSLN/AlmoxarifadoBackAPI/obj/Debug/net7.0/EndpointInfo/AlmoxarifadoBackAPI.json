@@ -594,14 +594,6 @@
           "codigo": {
             "type": "integer",
             "format": "int32"
-          },
-          "produto": {
-            "type": "string",
-            "nullable": true
-          },
-          "quantidade": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
